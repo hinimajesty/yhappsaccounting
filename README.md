@@ -1,12 +1,12 @@
 
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
 
-# :package_description
+# Simple PHP package for accounting
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/run-tests?label=tests)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/yhapps/yhappsaccounting.svg?style=flat-square)](https://packagist.org/packages/yhapps/yhappsaccounting)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/yhapps/yhappsaccounting/run-tests?label=tests)](https://github.com/yhapps/yhappsaccounting/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/yhapps/yhappsaccounting/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/yhapps/yhappsaccounting/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/yhapps/yhappsaccounting.svg?style=flat-square)](https://packagist.org/packages/yhapps/yhappsaccounting)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
@@ -16,20 +16,20 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 You can install the package via composer:
 
 ```bash
-composer require :vendor_slug/:package_slug
+composer require yhapps/yhappsaccounting
 ```
 
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-migrations"
+php artisan vendor:publish --tag="yhappsaccounting-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-config"
+php artisan vendor:publish --tag="yhappsaccounting-config"
 ```
 
 This is the contents of the published config file:
@@ -42,14 +42,14 @@ return [
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-views"
+php artisan vendor:publish --tag="yhappsaccounting-views"
 ```
 
 ## Usage
 
 ```php
-$variable = new VendorName\Skeleton();
-echo $variable->echoPhrase('Hello, VendorName!');
+$yhappsAccounting = new Yhapps\YhappsAccounting();
+echo $yhappsAccounting->echoPhrase('Hello, Yhapps!');
 ```
 
 ## Testing
@@ -64,7 +64,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/:author_username/.github/blob/main/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/hinimajesty/.github/blob/main/CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
@@ -72,7 +72,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [Hini Majesty](https://github.com/hinimajesty)
 - [All Contributors](../../contributors)
 
 ## License

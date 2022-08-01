@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Yhapps\YhappsAccounting\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class YhappsAccountingCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'yhappsaccounting';
 
     public $description = 'My command';
 
